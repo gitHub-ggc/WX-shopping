@@ -1,0 +1,105 @@
+page {
+  padding-bottom: 90rpx;
+}
+.goodDetail .detail_swiper swiper {
+  height: 400rpx;
+  padding: 20rpx 0;
+}
+.goodDetail .detail_swiper swiper .swiper_item {
+  display: flex;
+  justify-content: center;
+}
+.goodDetail .detail_swiper swiper .swiper_item image {
+  width: 60%;
+}
+.goodDetail .good_price {
+  padding-left: 20rpx;
+  color: #f00;
+  font-size: 28rpx;
+}
+.goodDetail .good_content {
+  display: flex;
+}
+.goodDetail .good_content .good_text {
+  font-size: 24rpx;
+  width: 600rpx;
+  padding-right: 20rpx;
+  padding-left: 10rpx;
+  margin-right: 20rpx;
+  box-sizing: border-box;
+  border-right: 1px solid #ccc;
+}
+.goodDetail .good_content .good_sc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.goodDetail .good_content .good_sc .good_icon {
+  width: 30rpx;
+}
+.goodDetail .good_content .good_sc .good_icon image {
+  width: 100%;
+}
+.goodDetail .good_content .good_sc .sc {
+  font-size: 20rpx;
+  color: #ccc;
+}
+.goodDetail .tuwen {
+  margin-top: 10rpx;
+}
+.goodDetail .tuwen .tuwen_detail {
+  color: #f00;
+  font-size: 25rpx;
+  padding: 20rpx;
+  font-weight: 900;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+.goodDetail .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #FCF9FC;
+  display: flex;
+}
+.goodDetail .footer .footer_left {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  font-size: 24rpx;
+  padding: 10rpx 0;
+}
+.goodDetail .footer .footer_left .footer_item1 {
+  position: relative;
+}
+.goodDetail .footer .footer_right {
+  flex: 1;
+  display: flex;
+}
+.iconstyle {
+  text-align: center;
+}
+.texts {
+  font-size: 20rpx;
+}
+.footer_right2 {
+  font-size: 24rpx;
+  color: #fff;
+  background-color: #FFA300;
+  padding: 30rpx 30rpx;
+}
+.footer_right3 {
+  font-size: 24rpx;
+  color: #fff;
+  background-color: #F8544E;
+  padding: 30rpx 54rpx;
+}
+.footer_item1 .footer_btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}

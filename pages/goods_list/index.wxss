@@ -1,0 +1,26 @@
+.goodList {
+  border-bottom: 1px solid #cccccc;
+  display: flex;
+  justify-content: space-around;
+  padding: 20rpx;
+}
+.goodList .goodImg {
+  width: 300rpx;
+  margin-right: 30rpx;
+}
+.goodList .goodImg image {
+  width: 100%;
+}
+.goodList .goodText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.goodList .goodText .goodTitle {
+  font-size: 20rpx;
+  font-weight: 900;
+}
+.goodList .goodText .goodPrice {
+  color: #f00;
+  font-size: 20rpx;
+}

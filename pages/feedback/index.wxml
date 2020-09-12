@@ -1,0 +1,33 @@
+<tab tabsdata="{{tabData}}" bindgoodlistEvent="tabEvent">
+</tab>
+<view wx:if="{{tabData[0].current}}">
+    <view class="search_title">
+        <view class="search_title1">问题的种类</view>
+        <view class="search_title2">
+           <text>功能建议</text>
+           <text>购买遇到的问题</text>
+           <text>性能问题</text>
+           <text>其它</text>
+        </view>
+    </view>
+    <view class="search_content">
+        <view class="search_content1">
+            <textarea placeholder="请简述一下您的问题" value="{{valueArear}}" bindinput="handleArea"></textarea> 
+        </view>
+         <view class="search_content2">
+           <button plain bindtap="handleImg">+</button> 
+           <upimg imgArr="{{imgArr}}" bindfeedBack="requireImg"></upimg>
+         </view> 
+    </view>
+    <view class="footer">
+       <button class="footer_btn" type="warn" bindtap="handleBtn">
+       <icon class="icons" type="success_no_circle" size="23"> </icon>
+       提交
+       </button>
+    </view>
+</view>
+<view wx:if="{{tabData[1].current}}">
+    页面开发中.....
+</view>
+  
+  

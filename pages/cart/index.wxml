@@ -1,0 +1,84 @@
+<view class="carts">
+   <!-- 收货地址 -->
+   <view class="btn" wx:if="{{! addressData.all}}">
+      <button plain type="primary" bindtap="handleBtn">获取收货地址</button>
+   </view>
+   <view wx:else class="carts_btn"> 
+       <view class="btn1">
+         <view>收货人: {{addressData.userName}}</view>
+         <view>{{addressData.telNumber}}</view>
+       </view> 
+       <view class="btn2">{{addressData.all}}</view>
+   </view>
+   <!-- 购物车 -->
+   <view class="cart_cont">
+      <view class="cart_title">购物车</view>
+      <block wx:if="{{carData.length !=0}}">
+          <view class="cart_content">
+          <view class="cart_box"
+           wx:for="{{carData}}"
+           wx:key="index"
+          >
+             <view class="cart_check">
+                <checkbox-group bindchange="handChecked" data-index="{{index}}">
+                   <checkbox value="{{item.goods_id}}" checked="{{item.checkde}}"></checkbox>
+                </checkbox-group>
+             </view> 
+             <view class="cart_img">
+                <image src="{{item.pics[0].imgUrl}}" mode="" lazy-load="false" />
+             </view>
+             <view class="cart_text">
+                <view class="cart_text2">
+                   {{item.goods_name}}
+                </view>
+                <view class="cart_footer">
+                   <view class="cart_price">
+                      {{item.goods_price}} 元
+                   </view>
+                     <view class="cart_1">
+                        <view 
+                         bindtap="handleNumAdd"
+                         data-goods_id="{{item.goods_id}}"
+                         class="cart_jian"
+                         data-index="{{-1}}"
+                         >
+                           -
+                        </view>
+                          <view class="cart_num">
+                             {{item.num}}
+                          </view>
+                            <view 
+                            class="caet_add"
+                            bindtap="handleNumAdd"
+                            data-goods_id="{{item.goods_id}}"
+                            data-index="{{1}}"
+                            >
+                               +
+                            </view>
+                     </view>
+                </view>
+             </view>
+          </view>
+      </view>
+      </block>
+      <block wx:else>
+        <view>
+          <image mode="widthFix" src="http://cdn.mc.huluxia.net/g4/M03/39/2C/rBAAdl9WPMmAThsdAAHJgBUzilk008.gif"></image>
+        </view>
+      </block>
+   </view>
+   <!-- 全选 -->
+   <view class="quanxuan">
+     <view class="qx_content">
+        <view class="qx_hehi">
+           <view class="qx_hehi2">
+                合计:
+                 <text>{{priceAll}}</text>
+                 元
+            </view>
+           <view class="qx_yunfei">{{footerText}}</view>
+        </view>
+        <view class="qx_jieshuang" bindtap="handleEnd">结算({{numAll}})</view>
+     </view>
+   </view>
+</view>  

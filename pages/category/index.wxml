@@ -1,0 +1,50 @@
+<seachinput></seachinput>
+<view class="content">
+    <scroll-view scroll-y class="scroll_left">
+        <view class="left_style">
+           <view class="left_style_item {{currentNum===index?'current':''}}"
+             wx:for="{{leftcategory}}"
+             wx:key="id"
+             bindtap="handleLeft"
+             data-index="{{index}}"
+            >
+              {{item}} 
+           </view>
+        </view> 
+    </scroll-view>
+    <scroll-view scroll-top="{{scrollTop}}" scroll-y class="scroll_right">
+         <view class="right_style">
+            <view style="padding-right: 20rpx;">
+                <view class="right_item1"
+                wx:for="{{rightcategory}}"
+                wx:for-index="index1"
+                wx:for-item="item1"
+                wx:key="id"
+                >
+                   <view class="right_text" >
+                      {{item1.name2}} 
+                   </view>
+                   <view class="flextyle">
+                       <navigator class="right_item2"
+                     wx:for="{{item1.children}}"
+                     wx:for-index="index2"
+                     wx:for-item="item2"
+                     wx:key="id"
+                     url="/pages/goods_list/index?c_id={{index2}}"
+                     open-type="navigate"
+                   >
+                       <view class="right_img">
+                          <image class="" src="{{item2.imgUrl}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+                       </view>
+                       <view class="right_title">
+                          <text>{{item2.name3}}</text>
+                       </view>
+                   </navigator>   
+                   </view>
+                        
+                </view> 
+            </view>
+         </view> 
+    </scroll-view>
+</view>
+  

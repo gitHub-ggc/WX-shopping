@@ -1,0 +1,67 @@
+<view class="goodDetail">
+    <view class="detail_swiper">
+        <swiper 
+         indicator-dots
+         autoplay
+         interval="2000"
+         circular
+        >
+           <swiper-item 
+            bindtap="handImg"
+            class="swiper_item"
+            wx:for="{{goodsDetailData.pics}}"
+            wx:key="id"
+            data-url="{{item.imgUrl}}"
+           >
+               <image class="" src="{{item.imgUrl}}" mode="widthFix" lazy-load="false" /> 
+           </swiper-item>
+        </swiper>
+    </view>
+     <view class="good_price">{{goodsDetailData.goods_price}} 元</view>
+     <view class="good_content">
+       <view class="good_text">{{goodsDetailData.goods_name}}</view>
+       <view class="good_sc">
+          <view class="good_icon">
+            <image bindtap="handleClict" class="" 
+            src="{{isClict?goodsDetailData.goods_icon2:goodsDetailData.goods_icon}}" mode="widthFix" lazy-load="false" />  
+          </view>
+          <view class="sc">收藏</view>
+       </view>
+     </view>
+     <view class="tuwen">
+         <view class="tuwen_detail">图文详情</view>
+            <rich-text class="" nodes="{{goodsDetailData.goods_detail}}">
+               
+            </rich-text>
+       
+     </view> 
+     <view class="footer">
+        <view class="footer_left">
+           <view class="footer_item1">
+              <view class="iconstyle">
+                  <text class="iconfont icon-kefu"></text>
+              </view>
+              <view class="texts">联系客服</view>
+              <button open-type="contact" class="footer_btn"></button>
+           </view>
+           <view class="footer_item1">
+              <view class="iconstyle">
+                  <text class="iconfont icon-fenxiang"></text>
+              </view>
+              <view class="texts">分享</view>
+              <button open-type="share" class="footer_btn"></button>
+           </view>
+           <navigator open-type="switchTab" url="/pages/cart/index" class="footer_item1">
+              <view class="iconstyle">
+                 <text class="iconfont icon-gouwuchezhengpin"></text>
+              </view>
+              <view class="texts">购物车</view>
+           </navigator>
+        </view>
+        <view class="footer_right">
+            <view class="footer_right2" bindtap="handCatAdd">加入购物车</view>
+            <view class="footer_right3">立即购买</view>
+        </view>
+     </view>
+</view>
+  

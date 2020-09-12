@@ -1,0 +1,49 @@
+page {
+  height: 100%;
+}
+page .content {
+  display: flex;
+  height: 100%;
+}
+page .content .scroll_left {
+  flex: 1;
+  height: 100%;
+}
+page .content .scroll_left .left_style .left_style_item {
+  padding: 20rpx;
+  background-color: #fff;
+  font-size: 28rpx;
+}
+page .content .scroll_left .left_style .current {
+  background-color: #ccc;
+  color: #ff0000;
+}
+page .content .scroll_right {
+  flex: 2;
+  height: 100%;
+}
+page .content .scroll_right .right_item1 .right_text {
+  padding: 20rpx 0;
+  text-align: center;
+}
+page .content .scroll_right .right_item1 .flextyle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+page .content .scroll_right .right_item1 .flextyle .right_item2 {
+  width: 150rpx;
+  float: left;
+  padding: 0 10rpx;
+  margin-bottom: 20rpx;
+}
+page .content .scroll_right .right_item1 .flextyle .right_item2 .right_img {
+  width: 100%;
+}
+page .content .scroll_right .right_item1 .flextyle .right_item2 .right_img image {
+  width: 100%;
+}
+page .content .scroll_right .right_item1 .flextyle .right_item2 .right_title {
+  font-size: 20rpx;
+  text-align: center;
+}

@@ -1,0 +1,112 @@
+page {
+  background-color: #fcf9fc;
+}
+.user {
+  background-color: pink;
+  position: relative;
+}
+.user .user_bg {
+  height: 500rpx;
+}
+.user .user_bg image {
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
+}
+.user .user_info {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  width: 160rpx;
+  height: 160rpx;
+  text-align: center;
+}
+.user .user_info image {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+.user .user_info .user_name {
+  font-size: 28rpx;
+  color: #fff;
+}
+.user_login {
+  background-color: pink;
+  height: 500rpx;
+  position: relative;
+}
+.user_login navigator {
+  color: green;
+  font-size: 28rpx;
+  padding: 20rpx 40rpx;
+  border: 1px solid #fff;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  border-radius: 8rpx;
+}
+.user_page {
+  position: relative;
+}
+.user_content {
+  background-color: #fff;
+  position: absolute;
+  top: 90%;
+  left: 20rpx;
+  width: 95%;
+  margin-right: 20rpx;
+}
+.user_content .conten2 {
+  margin-top: 20rpx;
+}
+.user_content .conten2 .conten2_title {
+  padding-left: 20rpx;
+  font-size: 24rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20rpx;
+}
+.user_content .conten3 {
+  padding: 20rpx;
+  border-bottom: 20rpx solid #fcf9fc;
+  font-size: 24rpx;
+}
+.user_content .conten4 {
+  border-bottom: 20rpx solid #fcf9fc;
+  padding: 20rpx;
+  font-size: 24rpx;
+}
+.user_content .conten4 .conten4_1 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #ccc;
+}
+.user_content .conten4 .conten4_2 {
+  padding: 20rpx 0;
+  border-bottom: 1px solid #ccc;
+}
+.user_content .conten4 .conten4_3 {
+  padding: 20rpx 0;
+}
+.conten1 {
+  border-bottom: 20rpx solid #fcf9fc;
+  display: flex;
+  padding-bottom: 20rpx;
+  justify-content: space-around;
+}
+.conten1 .conten1_item1 {
+  display: flex;
+  flex-direction: column;
+}
+.conten1 .conten1_item1 .conten1_num {
+  text-align: center;
+  color: red;
+}
+.conten1 .conten1_item1 .conten1_text {
+  font-size: 24rpx;
+}
+.user_img {
+  width: 45rpx;
+  height: 45rpx;
+}

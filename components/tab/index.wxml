@@ -1,0 +1,14 @@
+<view id="tabs">
+	<view class="tabstyle">
+		<view class="tabstyle_item {{item.current ? 'current' : '' }}" 
+        wx:for="{{tabsdata}}" 
+        wx:key="id"
+        bindtap="handleTab"
+        data-index="{{index}}">
+			{{item.title}}
+		</view>
+	</view>
+	<view class="tabs_content">
+		<slot></slot>
+	</view>
+</view>

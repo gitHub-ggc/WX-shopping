@@ -1,0 +1,10 @@
+<view class="upimg" wx:for="{{imgArr}}" wx:key="index" data-index="{{index}}"  bindtap="handleImg">
+    <view class="img">
+       <image src="{{item}}" />
+    </view>
+    <view class="upimg_icon">
+        <icon type="clear" size="23" color="red" ></icon>
+    </view>
+      
+</view>
+  

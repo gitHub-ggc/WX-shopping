@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "seachinput":"../../components/seachInput/seachInput"
+  },
+  "navigationBarTitleText": "桂长首页"
+}

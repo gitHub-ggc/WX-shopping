@@ -1,0 +1,55 @@
+
+<view class="carts">
+   <!-- 收货地址 -->
+   <view class="carts_btn"> 
+       <view class="btn1">
+         <view>收货人: {{addressData.userName}}</view>
+         <view>{{addressData.telNumber}}</view>
+       </view> 
+       <view class="btn2">{{addressData.all}}</view>
+   </view>
+   <!-- 购物车 -->
+   <view class="cart_cont">
+      <view class="cart_title">购物车</view>
+          <view class="cart_content">
+          <view class="cart_box"
+           wx:for="{{carData}}"
+           wx:key="index"
+          >
+             <view class="cart_img">
+                <image src="{{item.pics[0].imgUrl}}" mode="" lazy-load="false" />
+             </view>
+             <view class="cart_text">
+                <view class="cart_text2">
+                   {{item.goods_name}}
+                </view>
+                <view class="cart_footer">
+                   <view class="cart_price">
+                      {{item.goods_price}} 元
+                   </view>
+                     <view class="cart_1">
+                          <view class="cart_num">
+                             X {{item.num}}
+                          </view>
+                     </view>
+                </view>
+             </view>
+          </view>
+      </view>
+   </view>
+   <!-- 全选 -->
+   <view class="quanxuan">
+     <view class="qx_content">
+        <view class="qx_hehi">
+           <view class="qx_hehi2">
+                合计:
+                 <text>{{priceAll}}</text>
+                 元
+            </view>
+           <view class="qx_yunfei">包含运费</view>
+        </view>
+        <view class="qx_jieshuang" bindtap="handleOrder">结算({{numAll}})</view>
+     </view>
+   </view>
+</view>  
+

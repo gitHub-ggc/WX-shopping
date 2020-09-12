@@ -1,0 +1,83 @@
+
+<view class="user_page">
+    <view class="user" wx:if="{{userInfo}}">
+       <view class="user_bg">
+         <image class="" src="{{userInfo.avatarUrl}}" lazy-load="false" binderror="" bindload="" /> 
+       </view>
+        <view class="user_info">
+          <image class="" src="{{userInfo.avatarUrl}}" lazy-load="false" binderror="" bindload="" />
+          <view class="user_name">{{userInfo.nickName}}</view> 
+       </view>
+    </view>
+    <view class="user_login" wx:else>
+        <navigator url="../login/index" class="" open-type="navigate">
+            登入
+        </navigator>
+    </view>
+    <view class="user_content">
+       <view class="conten1">
+           <navigator  url="../collect/index?id=0" class="conten1_item1">
+            <view class="conten1_num">{{clictThings}}</view>
+            <view class="conten1_text">收藏的商品</view>
+          </navigator>
+          <navigator url="../collect/index?id=1" class="conten1_item1">
+            <view class="conten1_num">0</view>
+            <view class="conten1_text">收藏的店铺</view>
+          </navigator>
+          <navigator url="../collect/index?id=2" class="conten1_item1">
+            <view class="conten1_num">0</view>
+            <view class="conten1_text">关注的商品</view>
+          </navigator>
+          <navigator url="../collect/index?id=3" class="conten1_item1">
+            <view class="conten1_num">0</view>
+            <view class="conten1_text">我的足迹</view>
+          </navigator>
+       </view>
+       <view class="conten2">
+          <view class="conten2_title">我的订单</view>
+         <view class="conten1">
+          <navigator class="conten1_item1" url="../order/index?type=1">
+            <view class="conten1_num">
+               <image class="user_img" src="../../images/fukuan2x.png" lazy-load="false"  />
+            </view>
+            <view class="conten1_text">全部订单</view>
+          </navigator>
+          <navigator class="conten1_item1" url="../order/index?type=2">
+            <view class="conten1_num">
+              <image class="user_img" src="../../images/tuihuanshouhou2x.png" lazy-load="false"  />
+            </view>
+            <view class="conten1_text">待付款</view>
+          </navigator>
+          <navigator class="conten1_item1" url="../order/index?type=3">
+            <view class="conten1_num">
+               <image class="user_img" src="../../images/ziyuan2x.png" lazy-load="false" />
+            </view>
+            <view class="conten1_text">待收货</view>
+          </navigator>
+          <navigator class="conten1_item1" url="../order/index?type=4">
+            <view class="conten1_num">
+               <image class="user_img" src="../../images/daifukuan-32x.png" lazy-load="false"  />
+            </view>
+            <view class="conten1_text">退款/退货</view>
+          </navigator>
+       </view>
+       </view>
+       <view class="conten3">
+          <view>收货地址管理</view>
+       </view>
+       <view class="conten4">
+          <view class="conten4_1">
+            <view>联系客服</view>
+            <view>400-618-4000</view>
+          </view>
+          <navigator url="../feedback/index" class="conten4_2">意见反馈</navigator>
+          <view class="conten4_3">关于我们</view>
+       </view>
+       <view class="conten3">
+          <view>把应用推荐给其它人</view>
+       </view>
+    </view>
+</view>
+
+  
+ 

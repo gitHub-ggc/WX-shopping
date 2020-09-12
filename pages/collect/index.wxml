@@ -1,0 +1,30 @@
+<tab tabsdata="{{tabData}}" bindgoodlistEvent="handleTitle">
+   <view>
+      <view class="collect" wx:if="{{tabData[0].current}}">
+       <view class="collect_title">
+          <text class="collect_text1">全部</text>
+          <text class="collect_text2">正在热卖</text>
+          <text class="collect_text3">即将上线</text>
+       </view>
+       <view class="collect_content">
+          <navigator url="../goods_detail/index?id={{item.ids}}" 
+            class="collect_content_item"
+            wx:for="{{clictData}}"
+            wx:key="id"
+          >
+            <view class="collect_content_img">
+                 <image src="{{item.pics[0].imgUrl}}" />
+              </view>
+              <view class="collect_content_text">
+                 <view>{{item.goods_name}}</view>
+                 <view class="yuan">{{item.goods_price}} 元</view>
+              </view>
+          </navigator>
+       </view>
+      </view> 
+   </view>
+</tab>
+
+  
+
+  

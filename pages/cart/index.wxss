@@ -1,0 +1,116 @@
+.carts .btn {
+  margin-top: 20rpx;
+}
+.carts .btn button {
+  width: 60%;
+}
+.carts .carts_btn {
+  padding: 20rpx;
+  font-size: 28rpx;
+}
+.carts .carts_btn .btn1 {
+  display: flex;
+  justify-content: space-between;
+}
+.carts .cart_cont {
+  margin-top: 20rpx;
+}
+.carts .cart_cont .cart_title {
+  font-weight: 900;
+  padding: 20rpx;
+  font-size: 32rpx;
+  border-bottom: 2px solid red;
+  border-top: 2px solid red;
+}
+.carts .cart_cont .cart_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  height: 200rpx;
+}
+.carts .cart_cont .cart_box .cart_check {
+  flex: 1;
+  padding-left: 10rpx;
+}
+.carts .cart_cont .cart_box .cart_img {
+  flex: 5;
+  padding-right: 40px;
+  padding-left: 80rpx;
+  height: 120rpx;
+}
+.carts .cart_cont .cart_box .cart_img image {
+  width: 100%;
+  height: 100%;
+}
+.carts .cart_cont .cart_box .cart_text {
+  flex: 10;
+}
+.carts .cart_cont .cart_box .cart_text .cart_text2 {
+  margin-bottom: 35rpx;
+  font-size: 24rpx;
+}
+.carts .cart_cont .cart_box .cart_text .cart_footer {
+  display: flex;
+  justify-content: space-between;
+}
+.carts .cart_cont .cart_box .cart_text .cart_footer .cart_price {
+  color: red;
+  font-size: 30rpx;
+}
+.carts .cart_cont .cart_box .cart_text .cart_footer .cart_1 {
+  display: flex;
+  margin-right: 10rpx;
+}
+.carts .cart_cont .cart_box .cart_text .cart_footer .cart_1 .cart_jian {
+  width: 50rpx;
+  height: 50rpx;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.carts .cart_cont .cart_box .cart_text .cart_footer .cart_1 .cart_num {
+  margin: 0 20rpx;
+}
+.carts .cart_cont .cart_box .cart_text .cart_footer .cart_1 .caet_add {
+  width: 50rpx;
+  height: 50rpx;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.carts .quanxuan {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #fcf9fc;
+  width: 100%;
+}
+.carts .quanxuan .qx_content {
+  display: flex;
+  align-items: center;
+}
+.carts .quanxuan .qx_content .qx_check {
+  flex: 3;
+  padding-left: 10rpx;
+  font-size: 24rpx;
+}
+.carts .quanxuan .qx_content .qx_hehi {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  font-size: 24rpx;
+}
+.carts .quanxuan .qx_content .qx_hehi .qx_hehi2 text {
+  font-size: 35rpx;
+  color: red;
+}
+.carts .quanxuan .qx_content .qx_jieshuang {
+  flex: 2;
+  font-size: 24rpx;
+  color: #fff;
+  text-align: center;
+  background-color: red;
+  height: 84rpx;
+  line-height: 84rpx;
+  margin-left: 10rpx;
+}

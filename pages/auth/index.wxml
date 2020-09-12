@@ -1,0 +1,5 @@
+<view>
+    <button class="" type="primary" plain open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+    授权
+    </button>    
+</view>

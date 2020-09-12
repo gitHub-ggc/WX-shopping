@@ -1,0 +1,17 @@
+<view class="search">
+    <view class="search_title">
+      <view class="search_input">
+          <input value="{{value}}" placeholder="请输入要搜索的内容,如:'华为'" bindinput="handleInput" />
+      </view>
+      <view class="search_btn" wx:if="{{isShowBtn}}">
+         <button plain bindtap="handleBtn">
+             取消
+         </button> 
+      </view>  
+    </view>
+    <view class="search_content">
+       <navigator url="../goods_detail/index?id={{index}}" class="search_text" wx:for="{{searchData}}" wx:key="id">
+           {{item.title}}
+       </navigator>
+    </view>
+</view>

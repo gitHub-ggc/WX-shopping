@@ -1,0 +1,1 @@
+<button plain  type="primary" open-type="getUserInfo" bindgetuserinfo="handleInfo">登入</button>

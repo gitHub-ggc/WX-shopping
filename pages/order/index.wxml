@@ -1,0 +1,65 @@
+<tag tabsdata="{{tabData}}" bindgoodlistEvent="handleTab"></tag>
+<view wx:if="{{tabData[0].current}}" class="order">
+    <view 
+    class="order_item"
+    wx:for="{{orderAll}}"
+    wx:key="id"
+    >
+        <view class="order1">
+            <view>订单编号</view>
+            <view>{{item.order_number}}</view>
+        </view>
+         <view class="order1">
+            <view>订单价格</view>
+            <view class="order1_text">{{item.order_price}} 元</view>
+        </view>
+        <view class="order1">
+            <view>订单日期</view>
+            <view>{{item.order_time_cn}}</view>
+        </view> 
+    </view>
+</view>
+<view wx:if="{{tabData[1].current}}" class="order">
+    <view 
+    class="order_item"
+    wx:for="{{orderfail}}"
+    wx:key="id"
+    >
+        <view class="order1">
+            <view>订单编号</view>
+            <view>{{item.order_number}}</view>
+        </view>
+         <view class="order1">
+            <view>订单价格</view>
+            <view class="order1_text">{{item.order_price}} 元</view>
+        </view>
+        <view class="order1">
+            <view>订单日期</view>
+            <view>{{item.order_time}}</view>
+        </view> 
+    </view>
+</view>
+<view wx:if="{{tabData[2].current}}" class="order">
+    <view 
+    class="order_item"
+    wx:for="{{orderCompement}}"
+    wx:key="id"
+    >
+        <view class="order1">
+            <view>订单编号</view>
+            <view>{{item.order_number}}</view>
+        </view>
+         <view class="order1">
+            <view>订单价格</view>
+            <view class="order1_text">{{item.order_price}} 元</view>
+        </view>
+        <view class="order1">
+            <view>订单日期</view>
+            <view>{{item.order_time}}</view>
+        </view> 
+    </view>
+</view>
+<view wx:if="{{tabData[3].current}}">
+    4
+</view>
+  

@@ -1,0 +1,14 @@
+.order .order_item {
+  padding: 20rpx 10rpx 10rpx 20rpx;
+  border-bottom: 1px solid #ccc;
+  font-size: 24rpx;
+}
+.order .order_item .order1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+.order .order_item .order1 .order1_text {
+  color: #f00;
+  font-size: 30rpx;
+}

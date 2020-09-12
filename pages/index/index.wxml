@@ -1,0 +1,57 @@
+<view>
+   <seachinput></seachinput>
+</view>
+<view class="swiperView">
+   <swiper 
+      autoplay
+      indicator-dots
+      interval="2000"
+      circular
+    >
+      <swiper-item 
+      wx:for="{{swiperList}}"
+      wx:key="id"
+      >
+         <navigator open-type="navigate" url="../goods_detail/index?id={{index}}">
+             <image class="" src="{{item.imgUrl}}" mode="widthFix" lazy-load="false" /> 
+         </navigator>  
+      </swiper-item>
+   </swiper>
+</view>
+<view class="cate">
+  <view class="cate_item" 
+    wx:for="{{catedata}}"
+    wx:key="id">
+    <navigator open-type="switchTab" url="../category/index">
+       <view class="cate_view">
+          <image src="{{item.imgUrl}}" mode="widthFix"></image>
+       </view>
+       <view class="cate_text">
+          <text>{{item.name}}</text>
+       </view>
+    </navigator>
+  </view>
+</view>
+<view class="louchen">
+   <view class="louchen_item"
+   wx:for="{{louchen}}"
+   wx:key="id"
+   wx:for-index="index1"
+   wx:for-item="item1"
+   >
+      <text>{{item1.title}}</text>
+      <view class="louchen2">
+      <navigator open-type="switchTab"
+        wx:for="{{item1.children}}"
+        wx:key="id"
+        wx:for-index="index2"
+        wx:for-item="item2"
+        url="../goods_list/index"
+      >
+        <image mode="{{index2==0?widthFix:scaleToFill}}" src="{{item2.imgUrl}}"></image>
+      </navigator>
+      </view>
+   </view>
+</view>
+  
+

@@ -1,0 +1,26 @@
+<seachinput></seachinput>
+<tabs tabsdata="{{tabsData}}" bindgoodlistEvent="getgoodlist">
+    <view wx:if="{{tabsData[0].current}}">
+        <navigator class="goodList"
+        wx:for="{{goodList}}"
+        wx:key="id"
+        url="../goods_detail/index?id={{index}}"
+        >
+            <view class="goodImg">
+              <image src="{{item.goods_imgsrc}}" mode="widthFix" lazy-load="true" /> 
+           </view>
+           <view class="goodText">
+              <view class="goodTitle">
+                {{item.goods_text}}
+              </view>
+              <view class="goodPrice">{{item.goods_price}} 元</view>
+          </view>
+        </navigator>
+    </view>
+     <view wx:if="{{tabsData[1].current}}">
+        1
+    </view>
+    <view wx:if="{{tabsData[2].current}}">
+        2
+    </view> 
+</tabs>
